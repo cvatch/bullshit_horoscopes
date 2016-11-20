@@ -3,10 +3,13 @@ import random
 import os
 BASEDIR = os.path.dirname(os.path.realpath(__file__))
 
+
 def get_first_word(first_word_probabilities):
     """Create first word of a sentence"""
     val = random.random()
-    return first_word_probabilities.query('cumsum >= {}'.format(val)).iloc[0]['word1']
+    return first_word_probabilities.query(
+        'cumsum >= {}'.format(val)).iloc[0]['word1']
+
 
 def get_next_word(previous_word, bigrams_probs):
     val = random.random()
