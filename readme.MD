@@ -1,6 +1,6 @@
 # Horoscope markov chain "Bullshit" generator
 
-![screenshot here](example.png)
+![screenshot here](horoscope/example.png)
 
 Requirements (sorry no requests.txt):
 
